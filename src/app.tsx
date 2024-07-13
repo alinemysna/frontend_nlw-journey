@@ -3,8 +3,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import { CreateTripPage } from './pages/create-trip'
-import { TripDetailsPage } from './pages/trip-details'
+import { CreateTripPage } from './pages/create trip/index'
+import { TripDetailsPage } from './pages/trip-details/index'
 
 const router = createBrowserRouter([
   {

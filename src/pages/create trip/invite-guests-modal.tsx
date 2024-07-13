@@ -1,7 +1,7 @@
 import { X, AtSign, Plus } from 'lucide-react'
 import { FormEvent } from 'react'
 
-export interface InviteGuestsModalProps {
+interface InviteGuestsModalProps {
   closeGuestsModal: () => void
   emailsToInvite: string[]
   addNewEmailToInvite: (event: FormEvent<HTMLFormElement>) => void

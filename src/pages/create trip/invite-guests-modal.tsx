@@ -22,9 +22,10 @@ export function InviteGuestsModal({
           <div className='space-y-2'>
           <div className='flex items-center justify-between'>
             <h2 className='text-lg font-semibold'>Selecionar convidados</h2>
-            <button type="button" onClick={closeGuestsModal}>
-              < X className='size-5 text-zinc-400' />
-            </button>
+            
+            <Button onClick={closeGuestsModal} variant='secondary' size='default'>
+            < X  />
+            </Button>
           </div>
           <p className='text-sm text-zinc-400'>
             Os convidados irão receber e-mail para confirmar a participação na viagem
@@ -35,9 +36,10 @@ export function InviteGuestsModal({
               return (
                 <div key={email} className='py-1.5 px-2.5 rounded-md bg-zinc-800 flex items-center gap-2'>
                 <span className='text-zinc-50'>{email}</span>
-                <button type='button' onClick={() => removeEmailFormInvites(email)}>
-                  < X className='size-4 text-zinc-400' />
-              </button>
+                
+              <Button onClick={() => removeEmailFormInvites(email)} variant='secondary' size='default' >
+              < X  />
+              </Button>
             </div>
               )
             })}

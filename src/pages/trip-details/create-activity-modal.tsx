@@ -13,9 +13,10 @@ export function CreateActivityModal({ closeCreatActivityModal }: CreateActivityM
       <div className='space-y-2'>
       <div className='flex items-center justify-between'>
         <h2 className='text-lg font-semibold'>Cadastrar atividade</h2>
-        <button type="button" onClick={closeCreatActivityModal}>
-          < X className='size-5 text-zinc-400' />
-        </button>
+        
+        <Button onClick={closeCreatActivityModal} variant='secondary' size='default'>
+        < X />
+        </Button>
       </div>
       <p className='text-sm text-zinc-400'>
       Todos convidados podem visualizar as atividades.

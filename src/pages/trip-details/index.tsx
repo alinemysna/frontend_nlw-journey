@@ -29,6 +29,7 @@ export function TripDetailsPage() {
                 <Plus className='size-5' />
                 Cadastrar atividade
               </button>
+              
           </div>
 
           <Activities />
